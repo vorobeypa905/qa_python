@@ -28,9 +28,11 @@
   - исключение книг с возрастным рейтингом  
   - включение только «детских» жанров  
 
-- add_book_in_favorites / delete_book_from_favorites  
+- add_book_in_favorites   
   - добавление книги в избранное  
   - защита от повторного добавления  
+  
+- delete_book_from_favorites  
   - удаление книги из избранного  
 
 - get_list_of_favorites_books  

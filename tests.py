@@ -84,10 +84,14 @@ class TestBooksCollector:
         assert "Мульт" in collector.get_books_for_children()
 
     # ---------- favorites ----------
-    def test_add_and_delete_favorites(self, collector):
+    def test_add_book_in_favorites(self, collector):
         collector.add_new_book("Книга")
         collector.add_book_in_favorites("Книга")
         assert "Книга" in collector.get_list_of_favorites_books()
+
+    def test_delete_book_from_favorites(self, collector):
+        collector.add_new_book("Книга")
+        collector.add_book_in_favorites("Книга")
         collector.delete_book_from_favorites("Книга")
         assert "Книга" not in collector.get_list_of_favorites_books()
 
